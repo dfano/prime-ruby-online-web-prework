@@ -3,14 +3,10 @@ def prime?(num)
 		false
 	elsif num == 1 || num == 2
 		true
-	elsif
-		for i in (2..(num-1))
-	    	# return false if num % i == 0
-	    	if i % num == 0
-	    		return false
-	    	else
-	    		return true
-	    	end
+	else 
+		(2..(num - 1)).each do |n|
+	    	return false if num % n == 0
 	  	end
-	end
+	  	true
+	end			
 end
