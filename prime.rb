@@ -1,7 +1,7 @@
 def prime?(num)
-	if num <= 0
+	if num <= 1
 		false
-	elsif num == 1 || num == 2
+	elsif num == 2
 		true
 	else
 		(2..(num - 1)).each do |n|
